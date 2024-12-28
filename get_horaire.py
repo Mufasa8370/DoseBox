@@ -48,7 +48,7 @@ def update_crontab():
     # Parcourir chaque horaire et ajouter une tâche cron
     for item in schedule:
         hour, minute, _ = item['time'].split(':')  # Extraire l'heure et les minutes
-        cron_command = f"/usr/bin/python3 /chemin/vers/votre_script.py"  # Remplacer par le chemin de votre script à exécuter
+        cron_command = f"/usr/bin/python3 /home/fishstick/Desktop/DoseBox/main.py"  # Remplacer par le chemin de votre script à exécuter
 
         # Ajouter l'entrée cron à l'heure et minute spécifiées
         job = cron.new(command=cron_command)
